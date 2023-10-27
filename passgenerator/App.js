@@ -7,6 +7,10 @@ export default function App(){
       source={require("./src/assets/logo.png")}
       sytyles={styles.logo}
       />
+
+      <Text style={styles.title}>20 characters</Text>
+
+
     </View>
   )
 }
