@@ -1,16 +1,14 @@
-import {View, Text, StyleSheet, Image } from 'react-native' 
+import { View, Text, StyleSheet, Image } from 'react-native' 
 
 export default function App(){
   return(
-    <View style={ styles.container }>
+    <View style={styles.container}>
       <Image
       source={require("./src/assets/logo.png")}
       sytyles={styles.logo}
       />
 
-      <Text style={styles.title}>20 characters</Text>
-
-
+      <Text style={styles.title}>20 characters</Text>      
     </View>
   )
 }
