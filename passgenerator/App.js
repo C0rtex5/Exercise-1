@@ -22,11 +22,11 @@ export default function App(){
         maximumValue={20}
         maximumTrackTintColor='#ff0000'
         minimumTrackTintColor='#000'
-        thumbTintColor='392de9'>
+        thumbTintColor='#392de9'>
           </Slider>
       </View>
 
-      
+
 
     </View>
   )
