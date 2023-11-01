@@ -19,7 +19,10 @@ export default function App(){
         <Slider 
         style={{ height: 50 }}
         minimumValue={6}
-        maximumValue={20}>
+        maximumValue={20}
+        maximumTrackTintColor='#ff0000'
+        minimumTrackTintColor='#000'
+        thumbTintColor='392de9'>
           </Slider>
       </View>
 
@@ -43,5 +46,8 @@ const styles = StyleSheet.create({
     marginTop: 14,
     marginBottom: 14,
     width: "80%",
+    backgroundColor: "#FFF",
+    borderRadius: 8,
+    padding: 8,
   }
 })
