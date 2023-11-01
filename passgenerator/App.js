@@ -8,7 +8,7 @@ export default function App(){
       sytyles={styles.logo}
       />
 
-      <Text style={styles.title}>20 characters</Text>      
+      <Text style={styles.title}>20 characters</Text>
     </View>
   )
 }
