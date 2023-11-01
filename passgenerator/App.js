@@ -1,6 +1,6 @@
 // Importing my stuff below:
 
-import { View, Text, StyleSheet, Image } from 'react-native' 
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native' 
 import Slider from '@react-native-community/slider'
 
 // Exporting my stuff below:
@@ -25,6 +25,8 @@ export default function App(){
         thumbTintColor='392de9'>
           </Slider>
       </View>
+
+      
 
     </View>
   )
