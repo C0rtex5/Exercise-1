@@ -16,7 +16,10 @@ export default function App(){
       <Text style={styles.title}>20 characters</Text>
 
       <View style={styles.area}>
-        <Slider style={{ height: 50 }}>
+        <Slider 
+        style={{ height: 50 }}
+        minimumValue={6}
+        maximumValue={20}>
           </Slider>
       </View>
 
@@ -35,5 +38,10 @@ const styles = StyleSheet.create({
   },
   title:{
     marginBottom: 60
+  },
+  area:{
+    marginTop: 14,
+    marginBottom: 14,
+    width: "80%",
   }
 })
