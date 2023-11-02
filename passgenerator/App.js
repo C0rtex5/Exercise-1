@@ -10,7 +10,7 @@ export default function App(){
     <View style={styles.container}>
       <Image
       source={require("./src/assets/logo.png")}
-      sytyles={styles.logo}
+      style={styles.logo}
       />
 
       <Text style={styles.title}>20 characters</Text>
@@ -45,8 +45,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
+  logo:{
+    marginBottom: 60,
+  },
   title:{
-    marginBottom: 60
+    fontWeight: 'bold',
+    fontSize: 30,
   },
   area:{
     marginTop: 14,
@@ -64,6 +68,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 8,
+    marginBottom: 18,
   },
   buttonText:{
     color: "#FFF",
