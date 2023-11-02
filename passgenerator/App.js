@@ -26,7 +26,11 @@ export default function App(){
           </Slider>
       </View>
 
-
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonText}>
+          Gerar Senha
+        </Text>
+      </TouchableOpacity>
 
     </View>
   )
@@ -51,5 +55,18 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFF",
     borderRadius: 8,
     padding: 8,
+  },
+  button:{
+    backgroundColor: "#392de9",
+    width: "80%",
+    height: 50,
+    textAlign: "center",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 8,
+  },
+  buttonText:{
+    color: "#FFF",
+    fontSize: 20,
   }
 })
