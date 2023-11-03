@@ -1,19 +1,37 @@
-import { View, Text, StyleSheet, TouchableOpacity, Pressable } from "react-native"
+// Importing my stuff below:
 
-export function ModalPassword(){
+import { View, Text, StyleSheet, TouchableOpacity, Pressable, } from "react-native"
+
+// Exporting my stuff below:
+
+export function ModalPassword({ password, handleClose }){
     return(
         <View style={styles.container}>
             <View style={styles.content}>
                 <Text style={styles.title}>Generated Password</Text>
                 
                 <Pressable style={styles.innerPassword}>
-                    <Text style={styles.text}>aaaaaaaaaaaa</Text>
+                    <Text style={styles.text}>
+                        {password}
+                    </Text>
                 </Pressable>
+                
+                <View style={styles.buttonArea}>
+                    <TouchableOpacity style={styles.button} onPress={handleClose}>
+                        <Text style={styles.buttonText}>Back</Text>
+                    </TouchableOpacity>
 
+                    <TouchableOpacity style={[styles.button, styles.buttonSave]}>
+                        <Text style={styles.buttonSaveText}>Save</Text>
+                    </TouchableOpacity>
+                </View>
+            
             </View>
         </View>
     )
 }
+
+// Styling my stuff below:
 
 const styles = StyleSheet.create({
     container:{
@@ -47,4 +65,26 @@ const styles = StyleSheet.create({
         color: "#FFF",
         textAlign: "center",
     },
+    buttonArea: {
+        flexDirection:"row",
+        width: "90%",
+        marginTop: 8,
+        alignItems: "center",
+        justifyContent: "space-between",
+    },
+    button:{
+        flex:1,
+        alignItems: "center",
+        marginTop: 14,
+        marginBottom: 14,
+        padding: 8,
+    },
+    buttonSave:{
+        backgroundColor: "#392DE9",
+        borderRadius: 8,
+    },
+    buttonSaveText:{
+        color: "#FFF",
+        fontWeight: 'bold',
+    }
 })
